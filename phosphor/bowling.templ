@@ -1,19 +1,26 @@
-package icons
+package phosphor
 
 templ BowlingBall(props Props) {
-	@svg(props) {
-		if props.Variant == "Filled" {
-			<rect width="256" height="256" fill="none"></rect><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm4,104a12,12,0,1,1,12-12A12,12,0,0,1,132,128Zm20-36a12,12,0,1,1,12,12A12,12,0,0,1,152,92Zm20,52a12,12,0,1,1,12-12A12,12,0,0,1,172,144Z"></path>
-		} else if props.Variant == "DuoTone" {
-			<rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" opacity="0.2"></circle><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="132" cy="116" r="12"></circle><circle cx="164" cy="92" r="12"></circle><circle cx="172" cy="132" r="12"></circle>
-		} else if props.Variant == "Bold" {
-			<rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></circle><circle cx="128" cy="128" r="16"></circle><circle cx="160" cy="96" r="16"></circle><circle cx="176" cy="136" r="16"></circle>
-		} else if props.Variant == "Thin" {
-			<rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></circle><circle cx="132" cy="116" r="8"></circle><circle cx="164" cy="92" r="8"></circle><circle cx="172" cy="132" r="8"></circle>
-		} else if props.Variant == "Light" {
-			<rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></circle><circle cx="132" cy="116" r="10"></circle><circle cx="164" cy="92" r="10"></circle><circle cx="172" cy="132" r="10"></circle>
-		} else {
-			<rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="132" cy="116" r="12"></circle><circle cx="164" cy="92" r="12"></circle><circle cx="172" cy="132" r="12"></circle>
-		}
-	}
+    @svg(props) {
+        if props.Variant == "Filled" {
+            <rect width="256" height="256" fill="none" /><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm4,104a12,12,0,1,1,12-12A12,12,0,0,1,132,128Zm20-36a12,12,0,1,1,12,12A12,12,0,0,1,152,92Zm20,52a12,12,0,1,1,12-12A12,12,0,0,1,172,144Z" />
+        }
+        else if props.Variant == "DuoTone" {
+            <rect width="256" height="256" fill="none" /><circle cx="128" cy="128" r="96" opacity="0.2" /><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" /><circle cx="132" cy="116" r="12" /><circle cx="164" cy="92" r="12" /><circle cx="172" cy="132" r="12" />
+        }
+        else if props.Variant == "Bold" {
+            <rect width="256" height="256" fill="none" /><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" /><circle cx="128" cy="128" r="16" /><circle cx="160" cy="96" r="16" /><circle cx="176" cy="136" r="16" />
+        }
+        else if props.Variant == "Thin" {
+            <rect width="256" height="256" fill="none" /><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" /><circle cx="132" cy="116" r="8" /><circle cx="164" cy="92" r="8" /><circle cx="172" cy="132" r="8" />
+        }
+        else if props.Variant == "Light" {
+            <rect width="256" height="256" fill="none" /><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" /><circle cx="132" cy="116" r="10" /><circle cx="164" cy="92" r="10" /><circle cx="172" cy="132" r="10" />
+        }
+        else {
+            <rect width="256" height="256" fill="none" /><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" /><circle cx="132" cy="116" r="12" /><circle cx="164" cy="92" r="12" /><circle cx="172" cy="132" r="12" />
+        }
+    }
 }
+
+

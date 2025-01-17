@@ -33,19 +33,21 @@ Import the `icons` package and use the provided templ components with the `Props
 ```templ
 package main
 
-import "github.com/iota-uz/icons/phosphor"
+import (
+    icons "github.com/iota-uz/icons/phosphor"
+)
 
 templ Page() {
   <html>
     <body>
       <h1>Example Page</h1>
-      @phosphor.ArrowArcLeft(phosphor.Props{
-        Variant: phosphor.DuoTone,
+      @icons.ArrowArcLeft(icons.Props{
+        Variant: icons.DuoTone,
         Size:    "24",
         Class:   "rotate",
       })
-      @phosphor.IconHeart(phosphor.Props{
-        Variant: phosphor.Bold,
+      @icons.IconHeart(icons.Props{
+        Variant: icons.Bold,
         Size:    "32",
         Class:   "icon-heart",
       })

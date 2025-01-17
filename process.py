@@ -7,7 +7,7 @@ from xml.etree.ElementTree import ParseError
 
 # Input and output directories
 BASE_DIR = "phosphor-icons/SVGs"  # Update with your SVG folder
-OUTPUT_DIR = ""  # Output directory for .templ files
+OUTPUT_DIR = "./phosphor"  # Output directory for .templ files
 
 # Ensure the output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -258,7 +258,7 @@ def process_svg_files() -> None:
 
                 with open(output_path, "w", encoding="utf-8") as outfile:
                     # Add package name
-                    outfile.write("package icons\n\n")
+                    outfile.write("package phosphor\n\n")
 
                     # Write all icons in this group
                     for icon_name in sorted(icon_names):
