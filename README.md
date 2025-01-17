@@ -86,30 +86,40 @@ Use the `Props` struct to customize icons. The struct includes:
 
 ## Development
 
-This project includes a `process.py` script to transform icons downloaded from the Phosphor Icons website into templ
+This project includes a `cmd/generate/main.go` script to transform icons downloaded from the Phosphor Icons website into templ
 components.
 
-### Steps to Generate Components
+### Makefile Commands
 
-1. **Download the Phosphor Icons ZIP file**:
-    - Visit [Phosphor Icons](https://phosphoricons.com/assets/phosphor-icons.zip).
-    - Download the `phosphor-icons.zip` file.
+The project includes a `Makefile` to streamline common tasks.
 
-2. **Unzip the downloaded file**:
-   ```bash
-   unzip phosphor-icons.zip -d phosphor-icons
-   ```
+#### **`make download`**
+Downloads the Phosphor Icons ZIP file and extracts it into the `phosphor-icons` directory.
 
-3. **Run the `process.py` script**:
-    - Transform the unzipped assets into `.templ` files:
-    ```bash
-    python process.py
-    ```
+```bash
+make download
+```
 
-4. **Compile the `.templ` files into Go components**:
-   ```bash
-   templ generate
-   ```
+#### **`make generate`**
+Runs the Go script to transform the icons into templ components, formats the files, and generates Go code.
+
+```bash
+make generate
+```
+
+#### **`make clean`**
+Removes the `phosphor-icons` directory and any temporary or generated files.
+
+```bash
+make clean
+```
+
+#### **`make`**
+Runs both `download` and `generate` targets in sequence.
+
+```bash
+make
+```
 
 ## License
 
