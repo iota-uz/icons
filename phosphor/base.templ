@@ -1,0 +1,32 @@
+package icons
+
+type Variant string
+
+const (
+	Regular Variant = "regular"
+	Filled  Variant = "filled"
+	DuoTone Variant = "duotone"
+	Thin    Variant = "thin"
+	Bold    Variant = "bold"
+	Light   Variant = "light"
+)
+
+type Props struct {
+	Size       string
+	Class      string
+	Variant    Variant
+	Attributes templ.Attributes
+}
+
+templ svg(props Props) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 256 256"
+		width={ props.Size }
+		height={ props.Size }
+		class={ props.Class }
+		{ props.Attributes... }
+	>
+		{ children... }
+	</svg>
+}
