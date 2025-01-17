@@ -107,13 +107,6 @@ Runs the Go script to transform the icons into templ components, formats the fil
 make generate
 ```
 
-#### **`make clean`**
-Removes the `phosphor-icons` directory and any temporary or generated files.
-
-```bash
-make clean
-```
-
 #### **`make`**
 Runs both `download` and `generate` targets in sequence.
 
