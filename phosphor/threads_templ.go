@@ -46,22 +46,22 @@ func ThreadsLogo(props Props) templ.Component {
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "DuoTone" {
+			} else if props.Variant == DuoTone {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><ellipse cx=\"128\" cy=\"128\" rx=\"80\" ry=\"96\" opacity=\"0.2\"></ellipse><path d=\"M200,77.65C189.86,51.29,168.57,32,128,32c-64,0-80,48-80,96s16,96,80,96c48,0,72-32,72-56,0-64-104-64-104-16,0,40,72,40,72-24,0-56-56-56-72-32\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></path>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "Bold" {
+			} else if props.Variant == Bold {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><path d=\"M200,77.65C189.86,51.29,168.57,32,128,32c-64,0-80,48-80,96s16,96,80,96c48,0,72-32,72-56,0-64-104-64-104-16,0,40,72,40,72-24,0-56-56-56-72-32\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></path>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "Thin" {
+			} else if props.Variant == Thin {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><path d=\"M200,77.65C189.86,51.29,168.57,32,128,32c-64,0-80,48-80,96s16,96,80,96c48,0,72-32,72-56,0-64-104-64-104-16,0,40,72,40,72-24,0-56-56-56-72-32\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"8\"></path>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "Light" {
+			} else if props.Variant == Light {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><path d=\"M200,77.65C189.86,51.29,168.57,32,128,32c-64,0-80,48-80,96s16,96,80,96c48,0,72-32,72-56,0-64-104-64-104-16,0,40,72,40,72-24,0-56-56-56-72-32\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"12\"></path>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err

@@ -123,7 +123,7 @@ func generateTemplFunction(iconName string, variants IconVariant) (string, error
 			variantCases.WriteString(fmt.Sprintf("\nif props.Variant == %s {\n%s\n}", variant, content))
 			first = false
 		} else {
-			variantCases.WriteString(fmt.Sprintf("\nelse if props.Variant == \"%s\" {\n%s\n}", variant, content))
+			variantCases.WriteString(fmt.Sprintf("\nelse if props.Variant == %s {\n%s\n}", variant, content))
 		}
 	}
 

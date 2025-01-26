@@ -46,22 +46,22 @@ func Atom(props Props) templ.Component {
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "DuoTone" {
+			} else if props.Variant == DuoTone {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><ellipse cx=\"128\" cy=\"128\" rx=\"44.13\" ry=\"116.33\" transform=\"translate(-53.02 128) rotate(-45)\" opacity=\"0.2\"></ellipse><ellipse cx=\"128\" cy=\"128\" rx=\"44.13\" ry=\"116.33\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></ellipse><ellipse cx=\"128\" cy=\"128\" rx=\"116.33\" ry=\"44.13\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></ellipse><circle cx=\"128\" cy=\"128\" r=\"12\"></circle>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "Bold" {
+			} else if props.Variant == Bold {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><ellipse cx=\"128\" cy=\"128\" rx=\"44.13\" ry=\"116.33\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></ellipse><ellipse cx=\"128\" cy=\"128\" rx=\"116.33\" ry=\"44.13\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"24\"></ellipse><circle cx=\"128\" cy=\"128\" r=\"16\"></circle>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "Thin" {
+			} else if props.Variant == Thin {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><ellipse cx=\"128\" cy=\"128\" rx=\"44.13\" ry=\"116.33\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"8\"></ellipse><ellipse cx=\"128\" cy=\"128\" rx=\"116.33\" ry=\"44.13\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"8\"></ellipse><circle cx=\"128\" cy=\"128\" r=\"8\"></circle>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-			} else if props.Variant == "Light" {
+			} else if props.Variant == Light {
 				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><ellipse cx=\"128\" cy=\"128\" rx=\"44.13\" ry=\"116.33\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"12\"></ellipse><ellipse cx=\"128\" cy=\"128\" rx=\"116.33\" ry=\"44.13\" transform=\"translate(-53.02 128) rotate(-45)\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"12\"></ellipse><circle cx=\"128\" cy=\"128\" r=\"10\"></circle>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
