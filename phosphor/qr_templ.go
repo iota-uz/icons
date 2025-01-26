@@ -47,7 +47,7 @@ func QrCode(props Props) templ.Component {
 					return templ_7745c5c3_Err
 				}
 			} else if props.Variant == Filled {
-				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><rect x=\"40\" y=\"40\" width=\"80\" height=\"80\" rx=\"16\"></rect><rect x=\"40\" y=\"136\" width=\"80\" height=\"80\" rx=\"16\"></rect><rect x=\"136\" y=\"40\" width=\"80\" height=\"80\" rx=\"16\"></rect><path d=\"M144,184a8,8,0,0,0,8-8V144a8,8,0,0,0-16,0v32A8,8,0,0,0,144,184Z\"></path><path d=\"M208,152H184v-8a8,8,0,0,0-16,0v56H144a8,8,0,0,0,0,16h32a8,8,0,0,0,8-8V168h24a8,8,0,0,0,0-16Z\"></path><path d=\"M208,184a8,8,0,0,0-8,8v16a8,8,0,0,0,16,0V192A8,8,0,0,0,208,184Z\"></path>")
+				templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "<rect width=\"256\" height=\"256\" fill=\"none\"></rect><rect x=\"40\" y=\"40\" width=\"80\" height=\"80\" rx=\"16\"></rect><rect x=\"40\" y=\"136\" width=\"80\" height=\"80\" rx=\"16\"></rect><rect x=\"136\" y=\"40\" width=\"80\" height=\"80\" rx=\"16\"></rect><path d=\"M144,184a8,8,0,0,0,8-8V144a8,8,0,0,0-16,0v32A8,8,0,0,0,144,184Z\" fill=\"currentColor\"></path><path d=\"M208,152H184v-8a8,8,0,0,0-16,0v56H144a8,8,0,0,0,0,16h32a8,8,0,0,0,8-8V168h24a8,8,0,0,0,0-16Z\" fill=\"currentColor\"></path><path d=\"M208,184a8,8,0,0,0-8,8v16a8,8,0,0,0,16,0V192A8,8,0,0,0,208,184Z\" fill=\"currentColor\"></path>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
