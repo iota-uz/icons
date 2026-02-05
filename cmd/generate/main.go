@@ -88,8 +88,8 @@ func getIconGroup(fileName string) string {
 }
 
 func addFillAttribute(svgContent string) string {
-	// Add fill="currentColor" to paths that don't have a fill attribute
-	re := regexp.MustCompile(`<path([^>/]*)(/>|>)`)
+	// Add fill="currentColor" to SVG shape elements that don't have a fill attribute
+	re := regexp.MustCompile(`<(path|circle|rect|ellipse|polygon|polyline|line)([^>/]*)(/>|>)`)
 	return re.ReplaceAllStringFunc(svgContent, func(match string) string {
 		if !strings.Contains(match, "fill=") {
 			if strings.HasSuffix(match, "/>") {
@@ -111,6 +111,10 @@ func extractSVGContents(content string) (string, error) {
 
 	// Add fill attribute to paths
 	cleaned = addFillAttribute(cleaned)
+
+	// Normalize hardcoded black strokes to currentColor
+	cleaned = strings.ReplaceAll(cleaned, `stroke="#000"`, `stroke="currentColor"`)
+	cleaned = strings.ReplaceAll(cleaned, `stroke="#000000"`, `stroke="currentColor"`)
 
 	return strings.TrimSpace(cleaned), nil
 }
